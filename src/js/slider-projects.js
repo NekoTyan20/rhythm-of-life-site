@@ -1,4 +1,4 @@
-fetch('../src/data/projects.json')
+fetch('./src/data/projects.json')
 .then(response => {
     if (!response.ok) {
       throw new Error('Помилка при завантаженні JSON');
