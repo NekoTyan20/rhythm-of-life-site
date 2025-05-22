@@ -1,0 +1,74 @@
+@use '../utils/variables';
+@use '../utils/breakpoints';
+
+
+.iconOfLogo-name{
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1353px) {
+        margin-bottom: 5px;
+    }
+}
+
+.logo{
+    z-index: 2;
+    & .name{
+        display: none;
+        @media screen and (min-width: 1354px) {
+            display: block;
+
+            margin-left: 8px;
+
+            font-family: Inter, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: variables.$blue-accent-color;
+
+            text-transform: uppercase;
+
+            &.footer{
+                color: variables.$white-color;
+            }
+        }
+    }
+
+    & .icon{
+        width: 50px;
+        height: 50px;
+
+        @media screen and (min-width: breakpoints.$tablet) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @media screen and (min-width: 1354px) {
+            width: 45px;
+            height: 45px;
+        }
+
+        fill: variables.$blue-accent-color;
+        stroke: variables.$white-color;
+
+        &.footer{
+            fill: variables.$white-color;
+            stroke: variables.$blue-accent-color;
+        }
+    }
+
+    & .form-of-organization{
+        display: none;
+        @media screen and (min-width: 1354px) {
+            display: block;
+
+            font-family: Inter, sans-serif;
+            font-size: 8px;
+            font-weight: 500;
+            color: variables.$blue-accent-color;
+
+            &.footer{
+                color: variables.$white-color;
+            }
+        }
+    }
+}

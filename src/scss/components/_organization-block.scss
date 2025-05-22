@@ -1,0 +1,36 @@
+@use '../utils/variables';
+
+.organization-block{
+    display: flex;
+    align-items: center;
+
+    & .info{
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: variables.$box-shadow-section-blocks;
+    }
+
+    & img{
+        display: none;
+
+        @media screen and (min-width: 1000px) {
+            display: block;
+        }
+        margin-left: 70px;
+        border-radius: 20px;
+    }
+
+    & .button{
+        display: block;
+        width: 100%;
+    }
+}
+
+.our-achives{
+    display: flex;
+    justify-content: center;
+
+    & .second{
+        margin-left: 50px;
+    }
+}

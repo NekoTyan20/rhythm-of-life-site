@@ -1,0 +1,27 @@
+@use '../utils/variables';
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 8px 13px;
+  font-size: 20px;
+  background-color: variables.$yellow-color;
+  color: variables.$dark-blue-accent-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  opacity: 0.8;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+
+  & .icon{
+    transform: rotate(180deg);
+    margin-top: 5px;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}

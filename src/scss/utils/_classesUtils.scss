@@ -1,0 +1,55 @@
+@use '../utils/variables';
+@use '../utils/breakpoints';
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.section-padding{
+    padding-bottom: 40px;
+     scroll-margin-top: 80px;
+    
+    @media screen and (max-width: breakpoints.$desktop){
+        .slider-btns-space{
+            padding-bottom: 60px;
+        }
+    }
+
+    &.double{
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: breakpoints.$tablet){
+        padding-bottom: 50px;
+
+        &.double{
+            padding-top: 50px;
+        }
+    }
+
+    @media screen and (min-width: breakpoints.$desktop){
+        padding-bottom: 60px;
+
+        &.double{
+            padding-top: 60px;
+        }
+    }
+}
+
+.hide{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+

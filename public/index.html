@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website of the public organization "Rhythm of Our Life"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="header-fixed">
+            <div class="container header">
+                <nav class="header-block">
+                    <a href="./index.html" class="logo link">
+                        <div class="iconOfLogo-name">
+                            <svg aria-label="логотип організації" class="icon">
+                                <use class="" href="./images/sprite.svg#icon-logo"></use>
+                            </svg>
+                            <span class="name">Ритм <br>нашого<br> життя</span>
+                        </div> 
+                        <span class="form-of-organization">Громадська організація</span>
+                    </a>
+
+                    <button type="button" class="btn-burger">
+                        <svg class="icons-mobile-menu" width = "40" height = "40" aria-label="mobile menu switch">
+                            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+                    <div class="header-burger-elements">
+                        <ul class="nav-list list">
+                            <li class="item">
+                                <a href="#sectionAbout" class="link">Про організацію</a>
+                            </li>
+                            <li class="item">
+                                <a href="#sectionTeam" class="link">Команда</a>
+                            </li>
+                            <li class="item">
+                                <a href="#sectionServices" class="link">Послуги</a>
+                            </li>
+                            <li class="item">
+                                <a href="#sectionProjects" class="link">Проєкти</a>
+                            </li>
+                        </ul>
+
+                        <ul class="contacts list">
+                            <li class="item">
+                                <a href="mailto:zritmnasogo@gmail.com" class="contact-header accent-mail-mobile icon-contact link">
+                                    <svg class="icon-contact__item envelope">
+                                        <use  href="./images/sprite.svg#icon-envelope"></use>
+                                    </svg> 
+                                zritmnasogo@gmail.com</a>
+                            </li>
+                            <li class="item">
+                                <a href="tel:+380961841598" class="contact-header icon-contact link">
+                                    <svg  class="icon-contact__item phone">
+                                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                                    </svg>
+                                +38 096 184 15 98</a>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://send.monobank.ua/jar/5v6pjhME5R" class="button-header-block button link" target="_blank" rel="noopener noreferrer">Зробити донат</a>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="overlay">
+                <div class="container overlay-info">
+                    <h1 class="first-title-text">Громадська організація <br>“Ритм нашого життя”</h1>
+                    <p class="first-title-text paragraph br">Ритм нашого життя — підтримка тим, хто опинився на межі та потребує допомоги</p>
+                    <button id="join" type="button" class="button">Приєднатися до команди</button>
+                    <div class="backdrop is-hidden">
+                        <div class="modal">
+                            <div class="form-close-btn-position">
+                                <button type="button" class="close-form-btn">
+                                    <svg class="close-form-btn__icon">
+                                        <use href="./images/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-content">
+                                <p class="form-paragraph">Залиште свої дані, ми вам передзвонимо</p>
+
+                                <form id="cooperation-form">
+                                    <div class="form-field">
+                                        <label for="name">Ім'я</label>
+                                        <div class="form-field__input-block">
+                                            <input type="text" name="name" id="name" required>
+                                            <svg class="icon">
+                                                <use href="./images/sprite.svg#icon-person"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-field">
+                                        <label for="phone">Електронна пошта</label>
+                                        <div class="form-field__input-block">
+                                            <input type="tel" name="phone" id="phone" required>
+                                            <svg class="icon">
+                                                <use href="./images/sprite.svg#icon-tel"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-field">
+                                        <label for="email">Телефон</label>
+                                        <div class="form-field__input-block">
+                                            <input type="email" name="email" id="email" required>
+                                            <svg class="icon">
+                                                <use href="./images/sprite.svg#icon-email"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field form-field-last">
+                                        <label for="comment">Коментар</label>
+                                        <textarea name="comment" id="comment" placeholder="Ваше повідомлення"></textarea>
+                                    </div>
+                                    
+                                    <div class="block-btn-submit">
+                                        <button type="submit" class="button">Submit</button>
+                                    </div>
+
+                                    <p id="status-cooperation"></p>
+
+                                    <input type="hidden" name="form_type" value="Заявка на співпрацю">
+                                </form>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="sectionAbout" data-aos="fade-up">
+            <div class="container"> 
+                <div class="organization-block">
+                    <div class="info">
+                        <h2 class="second-title-text">Громадська організація “Ритм нашого життя” – підтримуємо тих, хто постраждав найбільше</h2>
+                        <p class="paragraph-text">З 2019 року ми об’єднуємо зусилля заради допомоги сім’ям внутрішньо переміщених осіб, військовослужбовцям 
+                            та дітям, які отримали інвалідність внаслідок війни. Наша мета — забезпечити підтримку тим, хто цього 
+                            найбільше потребує, захищати їхні права та створювати умови для гідного життя. Ми активно працюємо, 
+                            реалізовуємо гуманітарні ініціативи, розвиваємо волонтерський рух і сприяємо зміцненню громад.
+                        </p>
+                        <div class="our-achives">
+                            <div>
+                                <p class="paragraph-year">2019</p>
+                                <p class="second-paragraph-text">рік заснування</p>
+                            </div>
+                            <div class="second">
+                                <p class="paragraph-year">245</p>
+                                <p class="second-paragraph-text">тонн допомоги</p>
+                            </div>
+                        </div>
+                        <a href="https://send.monobank.ua/jar/5v6pjhME5R" class="button link" target="_blank" rel="noopener noreferrer">Зробити донат</a>
+                    </div>
+                    <img src="./images/about-our-organization.jpg" alt="Наша команда" width="530" height="638">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="sectionTeam" data-aos="fade-up">
+            <div class="container">
+                <div class="team-block">
+                    <h2 class="second-title-text">Команда організації <span class="line"></span></h2>
+                    <div class="team-content">
+                        <div class="team-content__info">
+                            <h3 class="third-title-text members">Самусенко Владислав Олегович</h3>
+                            <p class="third-title-text posada">Голова Правління Громадської Організації «РИТМ НАШОГО ЖИТТЯ»</p>
+                            <p class="paragraph-text members">«РИТМ НАШОГО ЖИТТЯ» — це більше, ніж просто громадська організація. Це простір підтримки, розвитку й реальних змін. 
+                                Ми об’єднуємо людей, які не залишаються байдужими до проблем суспільства та готові діяти.
+                                Наша мета — допомагати тим, хто цього потребує, створювати нові можливості для вразливих категорій 
+                                населення, розвивати громадянське суспільство й надихати інших на добро.</p>
+                        </div>
+                        <div class="slide active" style="background-image: url('../public/images/member-first.jpg');">
+                            <div class="slide-info">
+                                <a href="https://www.instagram.com/v1ad__islav/" target="_blank" class="member-icon">
+                                    <svg width = "23" height = "23" aria-label="Інстаграм організації">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-padding" id="sectionServices" data-aos="fade-up">
+            <div class="container">
+                <div class="team-block">
+                    <h2 class="second-title-text">Послуги<span class="line"></span></h2>
+                    <ul class="services-block list">
+                        <li class="item">
+                            <svg width = "60" height = "60" aria-label="Руки" class="icon-arms">
+                                <use href="./images/sprite.svg#icon-arms-with-heart"></use>
+                            </svg>
+                            <div class="info">
+                                <h3 class="third-title-text services">Допомога сім'ям впо</h3>
+                                <p class="paragraph-text services">Підтримуєм сімʼї, які були змушені покинути свої домівки через війну. 
+                                    Ми надаємо допомогу з житлом, одягом, продуктами харчування, засобами гігієни та іншими речами 
+                                    першої необхідності. Особливу увагу приділяємо дітям та людям літнього віку, щоб забезпечити їм 
+                                    комфортні умови.
+                                </p>
+                            </div> 
+                        </li>
+                        <li class="item">
+                            <svg width = "60" height = "60" aria-label="Руки" class="icon-arms">
+                                <use href="./images/sprite.svg#icon-arms-with-heart"></use>
+                            </svg>
+                            <div class="info">
+                                <h3 class="third-title-text services">Допомога військовим</h3>
+                                <p class="paragraph-text services">Активно підтримуєм українських 
+                                    військовослужбовців. Ми передаємо необхідні речі на передову: теплий одяг, медикаменти, засоби гігієни, 
+                                    продукти харчування та технічне обладнання. Наша мета — полегшити умови служби та підтримати бойовий дух.
+                                </p>
+                            </div> 
+                        </li>
+                        <li class="item">
+                            <svg width = "60" height = "60" aria-label="Руки" class="icon-arms">
+                                <use href="./images/sprite.svg#icon-arms-with-heart"></use>
+                            </svg>
+                            <div class="info">
+                                <h3 class="third-title-text services">Допомога дітям з інваліднісию, яку отримали під час війни</h3>
+                                <p class="paragraph-text services">Приділяєм особливу увагу дітям, які зазнали поранень або втратили здоров’я внаслідок війни. 
+                                    Ми надаємо підтримку в реабілітації, забезпечуємо спеціальним обладнанням, медикаментами, психологічною допомогою.
+                                </p>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="sectionProjects" data-aos="fade-up">
+            <div class="container">
+                <div class="team-block">
+                    <h2 class="second-title-text">Проекти<span class="line"></span></h2>
+                    <div id="projectContainer" class="projects-block"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" data-aos="fade-up">
+            <div class="container">
+                <div class="team-block">
+                    <h2 class="second-title-text">Відгуки про роботу нашої організації</h2>
+                    <div class="testimonials-wrapper ">
+                        <ul class="testimonials-container list">
+                            <li class="testimonials-block">
+                                <svg width = "40" height = "40" aria-label="Кавичка">
+                                    <use class="" href="./images/sprite.svg#icon-quotation-mark"></use>
+                                </svg>
+                                <div class="info">
+                                    <p class="second-paragraph-text testimonials">Я — переселенка з Харкова, змушена була покинути дім. Завдяки ГО “Ритм нашого життя” ми отримали необхідний 
+                                    одяг для дитини та продуктовий набір. У цей складний час така підтримка — це не просто речі чи їжа, 
+                                    це відчуття, що ти не один. Дуже вдячна команді за турботу та увагу. 
+                                    </p>
+                                    <div class="person">
+                                        <div class="icon">
+                                            <svg width = "26" height = "26" aria-label="Палець вгору">
+                                                <use href="./images/sprite.svg#icon-review-icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-name-city">
+                                            <p class="second-paragraph-text name">Евеліна</p>
+                                            <p class="second-paragraph-text city">м. Харків</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="testimonials-block">
+                                <svg width = "40" height = "40" aria-label="Кавичка">
+                                    <use href="./images/sprite.svg#icon-quotation-mark"></use>
+                                </svg>
+                                <div class="info">
+                                    <p class="second-paragraph-text testimonials">У складний момент життя звернулася до ГО “Ритм нашого життя” 
+                                        і отримала гуманітарну допомогу — одяг, продукти та найнеобхідніші речі. Особливо хочеться відзначити 
+                                        доброзичливе ставлення та чітку організацію — тут ніколи не відмовлять у допомозі.
+                                    </p>
+                                    <div class="person">
+                                        <div class="icon">
+                                            <svg width = "26" height = "26" aria-label="Палець вгору">
+                                                <use href="./images/sprite.svg#icon-review-icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-name-city">
+                                            <p class="second-paragraph-text name">Олена</p>
+                                            <p class="second-paragraph-text city">м. Ізюм</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="testimonials-block">
+                                <svg width = "40" height = "40" aria-label="Кавичка">
+                                    <use href="./images/sprite.svg#icon-quotation-mark"></use>
+                                </svg>
+                                <div class="info">
+                                    <p class="second-paragraph-text testimonials">У цей важкий для всіх час отримала допомогу в Мирнограді від 
+                                        ГО “Ритм нашого життя”. Привезли продукти, ліхтарики та плівки для покрівель. Найголовніше — це не просто 
+                                        речі, а відчуття, що про тебе не забули. Тут ставляться з повагою, підтримують добрим словом, вислуховують. 
+                                    </p>
+                                    <div class="person">
+                                        <div class="icon">
+                                            <svg width = "26" height = "26" aria-label="Палець вгору">
+                                                <use href="./images/sprite.svg#icon-review-icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-name-city">
+                                            <p class="second-paragraph-text name">Ніна</p>
+                                            <p class="second-paragraph-text city">м. Мирноград</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="testimonials-block">
+                                <svg width = "40" height = "40" aria-label="Кавичка">
+                                    <use href="./images/sprite.svg#icon-quotation-mark"></use>
+                                </svg>
+                                <div class="info">
+                                    <p class="second-paragraph-text testimonials">Коли дізналася, що діткам з нашої школи-інтернату передали фени 
+                                        та машинки для стрижки — щиро зраділа. Це не просто речі, це турбота і увага, яких так не вистачає дітям. 
+                                        Велика вдячність ГО «Ритм нашого життя» та церкві «Божа сім’я» за такий подарунок!
+                                    </p>
+                                    <div class="person">
+                                        <div class="icon">
+                                            <svg width = "26" height = "26" aria-label="Палець вгору">
+                                                <use href="./images/sprite.svg#icon-review-icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-name-city">
+                                            <p class="second-paragraph-text name">Ірина</p>
+                                            <p class="second-paragraph-text city">Яхницька школа</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="testimonials-buttons">
+                            <button type="button" class="dots active" data-index="0"></button>
+                            <button type="button" class="dots"></button>
+                            <button type="button" class="dots"></button>
+                            <button type="button" class="dots mobile"></button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="section-padding" data-aos="fade-up">
+            <div class="container">
+                <div class="questions-container">
+                    <div class="questions-block">
+                        <h2 class="second-title-text">Відповіді на часті запитання</h2>
+                        <ul class="answers-block list">
+                            <li class="item">
+                                <button type="button" class="question-title"> 
+                                    <span class="paragraph-text questions active">Чим займається ГО «Ритм нашого життя»?</span>
+                                    <svg aria-label="Кнопка вгору" class="question-arrow-icon active">
+                                        <use href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </button>
+                                <p class="second-paragraph-text testimonials questions active">
+                                    <span class="inner-text">Організація надає допомогу сім’ям внутрішньо переміщених осіб — одягом, продуктами та необхідними речами. 
+                                    Підтримує військовослужбовців, передаючи їм гуманітарну допомогу та спорядження. Та допомогає дітям з 
+                                    інвалідністю, яку вони отримали внаслідок війни.</span>
+                                </p>
+                            </li>
+                            <li class="item">
+                                <button type="button" class="question-title"> 
+                                    <span class="paragraph-text questions">Як можна долучитися до вашої організації?</span>
+                                    <svg aria-label="Кнопка вгору" class="question-arrow-icon">
+                                        <use href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </button>
+                                <p class="second-paragraph-text testimonials questions">
+                                    <span class="inner-text">Щоб приєднатися до нашої організації, ви можете 
+                                    заповнити форму, натиснувши на кнопку у верхній частині сторінки. Також ви можете зв’язатися з нами через 
+                                    соціальні мережі за посиланнями, розміщеними на сайті, або зателефонувати за номером, вказаним у меню. 
+                                    Ми завжди відкриті до нових волонтерів та партнерів.</span>
+                                </p>
+                            </li>
+                            <li class="item">
+                                <button type="button" class="question-title"> 
+                                    <span class="paragraph-text questions">Як давно ви працюєте?</span>
+                                    <svg aria-label="Кнопка вгору" class="question-arrow-icon">
+                                        <use href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </button>
+                                <p class="second-paragraph-text testimonials questions">
+                                    <span class="inner-text">Ми розпочали свою діяльність у 2019 році. Відтоді ми 
+                                    постійно розвиваємось, вдосконалюємо наші послуги та розширюємо коло клієнтів. За ці роки нам 
+                                    вдалося реалізувати низку успішних проєктів і здобути довіру наших партнерів. Кожен новий етап нашої роботи — 
+                                    це ще один крок до позитивних змін у житті людей.</span>
+                                </p>
+                            </li>
+                                <li class="item">
+                                <button type="button" class="question-title"> 
+                                    <span class="paragraph-text questions">Як дізнатися про нові заходи та можливості?</span>
+                                    <svg aria-label="Кнопка вгору" class="question-arrow-icon">
+                                        <use href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </button>
+                                <p class="second-paragraph-text testimonials questions">
+                                    <span class="inner-text">На нашому сайті ви можете переглянути наші останні проєкти, 
+                                    ознайомитися з прикладами виконаних робіт та дізнатися більше про наш підхід і стиль. Це дозволить вам краще 
+                                    зрозуміти, чим ми займаємось і які можливості можемо запропонувати. Ми регулярно оновлюємо інформацію, 
+                                    щоб ви завжди були в курсі наших проєктів.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-questions">
+                        <p class="form-title">Не знайшли відповідь на своє питання?</p>
+                        <p class="paragraph-text">Задайте його нам напряму, і ми неодмінно на нього відповімо</p>
+                        <form id="question-form">
+                            <label for="userName">Ім'я</label>
+                            <input type="text" id="userName" name="userName" required>
+
+                            <label for="userEmail">Електронна пошта</label>
+                            <input type="email" id="userEmail" name="userEmail" required>
+
+                            <textarea name="message" id="message" placeholder="Запитання" required></textarea>
+
+                            <input type="hidden" name="form_type" value="Питання від користувача">
+
+                            <button type="submit">Запитати</button>
+                        </form>
+                        <p id="status-question" class="cooperation"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="our-socials">
+            <h2 class="second-title-text footer">Долучайтесь до нас у соціальних мережах</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/therhythmofourlife/" target="_blank" class="member-icon socials-footer">
+                    <svg width = "23" height = "23" aria-label="Інстаграм організації">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@ГОРИТМНАШОГОЖИТТЯ" target="_blank" class="member-icon socials-footer">
+                    <svg width = "35" height = "35" aria-label="Ютуб організації">
+                        <use href="./images/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://invite.viber.com/?g=80X05IqaYkkhbgA9wXRmSZtCXor0-qBW" target="_blank" class="member-icon socials-footer">
+                    <svg width = "35" height = "35" aria-label="Вайбер організації">
+                        <use href="./images/sprite.svg#icon-viber"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-block">
+            <div class="container">
+                <div class="relative-block-for-footer-info">
+                    <div class="footer-block__info">
+                        <div class="footer-block__info__mobile">
+                            <a href="./index.html" class="logo link">
+                                <div class="iconOfLogo-name footer">
+                                    <svg aria-label="логотип організації" class="icon footer">
+                                        <use href="./images/sprite.svg#icon-logo"></use>
+                                    </svg>
+                                    <span class="name footer">Ритм <br>нашого<br> життя</span>
+                                </div> 
+                                <span class="form-of-organization footer">Громадська організація</span>
+                            </a>
+
+                            <p class="slogan">Поруч у складний час. <br> Разом — до кращого.</p>
+                        </div>
+
+                        <nav class="nav-footer-marg">
+                            <ul class="nav-list footer list">
+                                <li class="item footer">
+                                    <a href="#sectionAbout" class="link footer">Про організацію</a>
+                                </li>
+                                <li class="item footer">
+                                    <a href="#sectionTeam" class="link footer">Команда</a>
+                                </li>
+                                <li class="item footer">
+                                    <a href="#sectionServices" class="link footer">Послуги</a>
+                                </li>
+                                <li class="item footer">
+                                    <a href="#sectionProjects" class="link footer">Проєкти</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav>
+                            <ul class="contacts list">
+                                <li class="item footer">
+                                    <a href="mailto:zritmnasogo@gmail.com" class="contact-header accent-mail-mobile icon-contact link footer">
+                                        <svg class="icon-contact__item envelope">
+                                            <use  href="./images/sprite.svg#icon-envelope"></use>
+                                        </svg> 
+                                    zritmnasogo@gmail.com</a>
+                                </li>
+                                <li class="item footer">
+                                    <a href="tel:+380961841598" class="contact-header icon-contact link footer">
+                                        <svg  class="icon-contact__item phone">
+                                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                                        </svg>
+                                    +38 096 184 15 98</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <p class="second-paragraph-text footer">Ритм нашого життя © Усі права захищені</p>
+            </div>
+        </div>
+        <button id="scrollToTopBtn" class="scroll-to-top">
+            <svg width="20" height="20" class="icon">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+        </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/js/animation.js"></script>
+    <script src="../src/js/burger.js"></script>
+    <script src="../src/js/modal.js"></script>
+    <script src="../src/js/slider-workers.js"></script>
+    <script src="../src/js/slider-projects.js"></script>
+    <script src="../src/js/testimonials-slider.js"></script>
+    <script src="../src/js/questions-list.js"></script>
+    <script src="../src/js/form-question.js"></script>
+    <script src="../src/js/form-cooperation.js"></script>
+    <script src="../src/js/on-top-btn-scroll.js"></script>
+</body>
+</html>

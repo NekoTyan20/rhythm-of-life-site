@@ -1,0 +1,102 @@
+@use '../utils/variables';
+@use '../utils/breakpoints';
+
+.our-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: breakpoints.$tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    background: linear-gradient(90deg, rgba(0, 79, 249, 0.8) 0%, rgba(255, 249, 76, 0.8) 100%);
+    border-radius: 30px 30px 0 0;
+}
+
+.social-links{
+    display: flex;
+}
+
+.relative-block-for-footer-info{
+    position: relative;
+}
+
+.footer-block{
+    width: 100%;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: breakpoints.$tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    background: variables.$dark-blue-accent-color;
+
+    &__info{
+
+       @media screen and (min-width: breakpoints.$tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+       }
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid variables.$white-color;
+        }
+
+        & .slogan{
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.6;
+            color: variables.$white-color;
+        }
+
+        &__mobile{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            @media screen and (min-width: breakpoints.$tablet){
+                margin-bottom: 0;
+            }
+
+            & .slogan{
+
+                font-size: clamp(16px, 2.5vw, 18px);
+
+                @media screen and (min-width: breakpoints.$tablet) and (max-width: 1000px) {
+                    margin-left: 60px;
+                }
+
+                @media screen and (min-width: 1001px) {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+}
+
+
+.nav-footer-marg{
+    margin-left: auto;
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,22 @@
+@use './utils/variables';
+@use './base/baseStructure';
+@use './base/container';
+@use './utils/breakpoints';
+@use './utils/classesUtils';
+@use './components/header';
+@use './components/burger-elements';
+@use './components/modal';
+@use './base/headlines';
+@use './base/logo';
+@use './components/overlay';
+@use './components/organization-block';
+@use './components/team';
+@use './components/services';
+@use './components/projects-block';
+@use './components/arrow-buttons';
+@use './components/testimonials';
+@use './components/questions-block';
+@use './components/form-question';
+@use './components/footer';
+@use './components/on-top-button';
+

@@ -1,0 +1,68 @@
+@use '../utils/variables';
+
+.projects-block{
+
+    & .content-block{
+        position: relative;
+        margin-bottom: 80px;
+
+        &:last-child{
+            margin-bottom: 50px;
+        }
+    }
+
+    & .info{
+        @media screen and  (min-width: 1100px){
+            display: flex;
+            flex-direction: row;
+
+            &.reverse{
+                flex-direction: row-reverse;
+            }
+        }
+
+    }
+
+    & img{
+        position: absolute;
+
+         @media screen and (max-width: 1099px) {
+            left: 0;
+              width: 100%;
+            max-width: 530px;
+            aspect-ratio: 530 / 483; 
+            height: auto;           
+        }
+
+        margin-bottom: 50px;
+
+        @media screen and (min-width: 1100px) {
+            margin-left: 48px;
+            margin-bottom: 0;
+
+            top: 0;
+            right: 0;
+        }
+        border-radius: 20px;
+        border: 1px solid variables.$black-color;
+
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+
+        &.active{
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+        }
+
+        &.reverse{
+            left: 0;
+            margin-left: 0;
+
+            @media screen and (min-width: 1100px) {
+                margin-right: 48px;
+            }
+        }
+
+    }
+}

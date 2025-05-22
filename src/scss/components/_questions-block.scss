@@ -1,0 +1,102 @@
+@use '../utils/variables';
+@use '../utils/breakpoints';
+
+.questions-container{
+
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between
+    }
+
+}
+
+.questions-block{
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: variables.$box-shadow-section-blocks;
+
+    @media screen and (max-width: 999px) {
+        margin-bottom: 40px;
+    }
+}
+
+.answers-block{
+    & .item{
+        width: 100%;
+
+        @media screen and (min-width: 1000px) {
+            width: 700px;
+        }
+
+        background-color: transparent;
+        border: 1px solid variables.$button-on-top-color;
+        border-radius: 20px;
+
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+
+        .second-paragraph-text {
+            padding: 0 20px;  /* фиксированный горизонтальный паддинг */
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+
+        .inner-text {
+            display: block;
+            padding: 10px 0; /* минимальный паддинг по вертикали по умолчанию */
+            transition: padding 0.3s ease;
+            }
+    }
+}
+
+.question-title{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+
+    border-radius: 20px;
+
+    transition: 250ms;
+
+    padding: 16px;
+
+    cursor: pointer;
+
+    & .question-arrow-icon{
+        fill: variables.$primary-text-color;
+        transition: 250ms;
+
+        flex-shrink: 0;
+
+        width: 20px;   
+        height: 20px;  
+
+        @media screen and (min-width: breakpoints.$tablet) {
+            width: 25px;   
+            height: 25px;  
+        }
+
+        &.active{
+            fill: variables.$blue-accent-color;
+            transform: rotate(180deg);
+        }
+    }
+
+    &:hover, &:focus{
+        background-color: variables.$yellow-color-lighter;
+    }
+}

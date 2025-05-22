@@ -1,0 +1,20 @@
+@use '../utils/variables';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+body{
+    color: variables.$primary-text-color;
+    background-color: variables.$white-color;
+    font-family: Montserrat Alternates, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2; 
+    letter-spacing: 0.02em;
+}
