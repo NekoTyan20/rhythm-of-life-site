@@ -9,12 +9,18 @@
 
     width: 100%;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     @media screen and (min-width: breakpoints.$tablet) {
         padding-top: 60px;
         padding-bottom: 60px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     background: linear-gradient(90deg, rgba(0, 79, 249, 0.8) 0%, rgba(255, 249, 76, 0.8) 100%);
