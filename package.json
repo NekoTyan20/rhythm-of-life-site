@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Web site for organization rhythm of our life.",
   "scripts": {
-    "start": "live-server --port=3000 --open=./public/index.html",
+    "start": "live-server --port=3000 --open=./index.html",
     "compile": "sass src/scss/main.scss dist/css/main.css",
     "sass": "sass --watch src/scss/main.scss:dist/css/main.css",
     "lint:styles": "stylelint \"src/scss/**/*.scss\"",
