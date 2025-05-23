@@ -31,10 +31,18 @@ function animateSingleNumber(el) {
   });
 }
 
-function animateAllNumbers() {
-  document.querySelectorAll('.paragraph-year').forEach(el => {
-    animateSingleNumber(el);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      animateSingleNumber(el);
+      observer.unobserve(el);
+    }
   });
-}
+}, {
+  threshold: 0.5, 
+});
 
-animateAllNumbers();
+document.querySelectorAll('.paragraph-year').forEach(el => {
+  observer.observe(el);
+});
