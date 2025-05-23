@@ -883,7 +883,7 @@ body {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media screen and (width >= 900px) {
   .team-content {
     display: flex;
     align-items: center;
@@ -893,7 +893,7 @@ body {
   order: 2;
   margin-bottom: 30px;
 }
-@media screen and (width >= 1000px) {
+@media screen and (width >= 900px) {
   .team-content__info {
     margin-left: 50px;
     width: 500px;
@@ -906,7 +906,6 @@ body {
   position: relative;
   z-index: 0;
   height: 50vh;
-  margin: 10px;
   color: #fff;
   border: 1px solid #000;
   background-size: cover;
