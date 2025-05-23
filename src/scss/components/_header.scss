@@ -13,6 +13,10 @@
     @media screen and (width <= 867px) {
         border-radius: 0 0 25px 25px;
     }
+
+    @media screen and (width <= 768px) {
+         height: 60px;
+    }
 }
 
 .header-block{
