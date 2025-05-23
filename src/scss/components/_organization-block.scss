@@ -12,11 +12,10 @@
 
     & img{
         display: none;
-
         margin-left: 70px;
         border-radius: 20px;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (width >= 1000px) {
             display: block;
         }
     }

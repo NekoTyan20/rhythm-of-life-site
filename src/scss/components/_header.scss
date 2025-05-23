@@ -4,14 +4,14 @@
 .header-fixed{
     position: fixed;
     z-index: 2;
-
+    height: 73px;
     width: 100%;
     background-color: variables.$white-color;
     box-shadow: variables.$box-shadow-header;
-    border-radius: 0px 0 40px 40px;
+    border-radius: 0 0 40px 40px;
 
-    @media screen and (max-width: 867px) {
-        border-radius: 0px 0 25px 25px;
+    @media screen and (width <= 867px) {
+        border-radius: 0 0 25px 25px;
     }
 }
 
@@ -19,10 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 5px 0;
 
-    @media screen and (min-width: 1354px) {
+    @media screen and (width >= 1354px) {
         padding: 7px 0;
     }
 }
@@ -31,13 +30,13 @@
     display: none;
     margin-bottom: 50px;
 
-     @media screen and (min-width: 868px){
+     @media screen and (width >= 868px){
         display: flex;
         margin-left: 30px;
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: 1000px){
+    @media screen and (width >= 1000px){
         display: flex;
         margin-bottom: 0;
     }
@@ -46,9 +45,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px 60px;
-
         margin-left: 0;
-
         margin-bottom: 0;
 
         @media screen and (min-width: breakpoints.$tablet) {
@@ -56,23 +53,24 @@
             grid-template-columns: repeat(2, 1fr); 
         }
 
-        @media screen and (max-width: 696px) {
+        @media screen and (width <= 696px) {
             gap: 20px 50px;
         }
     }
 
     & .item{
         margin-bottom: 30px;
+
         &:last-child{
             margin-bottom: 0;
         }
 
-        @media screen and (min-width: 868px){
+        @media screen and (width >= 868px){
             margin-left: 70px;
             margin-bottom: 0;
         }
 
-         @media screen and (min-width: 868px) and (max-width: 1000px){
+         @media screen and (width >= 868px) and (width <= 1000px){
             margin-left: 30px;
         }
 
@@ -89,10 +87,10 @@
         & .link{
             position: relative;
             padding: 5px;
-
             color: variables.$primary-text-color;
             font-size: 24px;
-            @media screen and (min-width: 868px) {
+
+            @media screen and (width >= 868px) {
                 font-size: 16px;
             }
 
@@ -137,7 +135,7 @@
     display: none;
     justify-content: flex-start;
 
-     @media screen and (min-width: 1202px){
+     @media screen and (width >= 1202px){
         display: block;
         justify-content: flex-start;
     }
@@ -145,7 +143,7 @@
     & .item{
         margin-bottom: 20px;
 
-        @media screen and (min-width: 1202px) {
+        @media screen and (width >= 1202px) {
             margin-bottom: 5px;
         }
     
@@ -160,14 +158,12 @@
         & .link{
             display: flex;
             align-items: center;
-
             font-size: 20px;
             font-weight: 500;
             color: variables.$dark-yellow-color;
-
             transition: 250ms;
 
-            @media screen and (min-width: 1000px) {
+            @media screen and (width >= 1000px) {
                 color: variables.$primary-text-color;
                 font-size: 14px;
             }
@@ -207,7 +203,7 @@
     &__item{
         margin-right: 8px;
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (width <= 1199px) {
             display: none;
         }
 
@@ -230,18 +226,14 @@
 
 .button{
     min-width: 226px;
-    padding: 16px 16px;
-
+    padding: 16px;
     text-align: center;
-
     font-family: inherit;
-
     border-radius: 12px;
     background-color: variables.$dark-blue-accent-color;
     color: variables.$white-color;
     border: 2px solid transparent;
     cursor: pointer;
-
     transition: variables.$transition;
 
     &:hover, &:focus{

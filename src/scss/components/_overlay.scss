@@ -3,16 +3,12 @@
 
 .overlay{
     align-content: center;
-
     max-width: 480px;
     height: 550px;
-
     margin-left: auto;
     margin-right: auto;
-
-    background-color: rgba(47, 48, 58, 0.4);
-    
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), image-set(url(../../images/overlay-mobile-1x.jpg) 1x, url(../../images/overlay-mobile-2x.jpg) 2x);
+    background-color: rgb(47 48 58 / 40%);
+    background-image: linear-gradient(to right, rgb(47 48 58 / 70%), rgb(47 48 58 / 70%)), image-set(url("../../images/overlay-mobile-1x.jpg") 1x, url("../../images/overlay-mobile-2x.jpg") 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,14 +17,12 @@
     @media screen and (min-width: breakpoints.$tablet) {
        max-width: 1600px;
        height: 600px;
-
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), image-set(url(../../images/overlay-tablet-1x.jpg) 1x, url(../../images/overlay-tablet-2x.jpg) 2x);
+        background-image: linear-gradient(to right, rgb(47 48 58 / 70%), rgb(47 48 58 / 70%)), image-set(url("../../images/overlay-tablet-1x.jpg") 1x, url("../../images/overlay-tablet-2x.jpg") 2x);
     }
 
     @media screen and (min-width: breakpoints.$desktop) {
         max-width: 1600px;
         height: 700px;
-
-        background-image: linear-gradient(to right, rgba(67, 67, 72, 0.5), rgba(73, 73, 79, 0.5)), image-set(url(../../images/overlay-desktop-1x.jpg) 1x, url(../../images/overlay-desktop-2x.jpg) 2x);
+        background-image: linear-gradient(to right, rgb(67 67 72 / 50%), rgb(73 73 79 / 50%)), image-set(url("../../images/overlay-desktop-1x.jpg") 1x, url("../../images/overlay-desktop-2x.jpg") 2x);
     }
 }

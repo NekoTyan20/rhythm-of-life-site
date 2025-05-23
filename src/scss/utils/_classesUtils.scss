@@ -13,7 +13,6 @@
 
 .section-padding{
     padding-bottom: 40px;
-     scroll-margin-top: 80px;
     
     @media screen and (max-width: breakpoints.$desktop){
         .slider-btns-space{
@@ -52,4 +51,3 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-

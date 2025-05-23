@@ -8,14 +8,14 @@
     box-shadow: variables.$box-shadow-section-blocks;
 
     & .members-cards{
-      @media screen and (min-width: 860px) {
+      @media screen and (width >= 860px) {
         display: flex;
       }
     }
 }
 
 .team-content{
-  @media screen and (min-width: 1000px) {
+  @media screen and (width >= 1000px) {
     display: flex;
     align-items: center;
   }
@@ -24,7 +24,7 @@
     order: 2;
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (width >= 1000px) {
       margin-left: 50px;
       width: 500px;
        margin-bottom: 0;
@@ -38,9 +38,7 @@
   z-index: 0;
   height: 50vh;
   margin: 10px;
-
   color: #fff;
-
   border: 1px solid variables.$black-color;
   background-size: cover;
   background-position: center;
@@ -49,23 +47,20 @@
   cursor: pointer;
   transition: all 500ms ease-in-out;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (width >= 1000px) {
     height: 70vh;
   }
 
   & .slide-info{
     position: absolute;
-    
     margin: 0;
     left: 50%;
-
     transform: translateX(-50%);
     bottom: 10px;
     max-width: 377px;
-
     transition: opacity 0.1s ease-in 0.1s;
 
-    @media screen and (min-width: 860px) {
+    @media screen and (width >= 860px) {
       opacity: 0;
     }
 
@@ -75,13 +70,13 @@
   }
 
   &.active{
-    @media screen and (min-width: 860px) {
+    @media screen and (width >= 860px) {
       flex: 10;
     }
   }
 
   &.active .slide-info{
-    @media screen and (min-width: 860px) {
+    @media screen and (width >= 860px) {
       opacity: 1;
       transition: opacity 0.3s ease-in 0.4s;
     }
@@ -93,18 +88,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 44px;
     height: 44px;
-
     fill: variables.$white-color;
     border-radius: 50%;
     box-shadow: none;
-
     background-color: variables.$blue-accent-color;
-
     border: 1px solid variables.$black-color;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus{
@@ -113,8 +103,8 @@
     }
 
     &.socials-footer{
-      
       margin-left: 30px;
+
       &:first-child{
         margin-left: 0;
       }

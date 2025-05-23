@@ -12,10 +12,8 @@
 
 .testimonials-block{
     flex: 0 0 calc(100% - 10px); 
-
     margin-left: 20px;
     margin-bottom: 30px;
-
     border-radius: 32px;
     background-color: variables.$grey;
 
@@ -28,7 +26,6 @@
     }
 
     & .info{
-
         padding: 30px;
 
         @media screen and (min-width: breakpoints.$tablet) {
@@ -44,10 +41,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
             width: 50px;
             height: 50px;
-
             background-color: transparent;
             border: 1px solid variables.$black-color;
             border-radius: 50%;
@@ -66,16 +61,11 @@
     & .dots{
         width: 17px;
         height: 17px;
-
         margin-left: 15px;
-
         border-radius: 50%;
-
         background-color: variables.$white-color;
         border: 1px solid variables.$black-color;
-
         transition: 250ms;
-
         cursor: pointer;
 
         &.active{

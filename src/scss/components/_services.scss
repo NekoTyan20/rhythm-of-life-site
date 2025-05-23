@@ -5,7 +5,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
   justify-content: center;
 
   @media screen and (min-width: breakpoints.$tablet) {
@@ -26,14 +25,12 @@
     position: relative;
     flex: 1 1 100%;
     min-width: 280px;
-
     border: 1px solid variables.$black-color;
     border-radius: 20px;
-
     background: linear-gradient(
       90deg,
-      rgba(17, 184, 250, 0.24) 20%,
-      rgba(242, 237, 78, 0.29) 66%
+      rgb(17 184 250 / 24%) 20%,
+      rgb(242 237 78 / 29%) 66%
     );
 
     @media screen and (min-width: breakpoints.$tablet) {

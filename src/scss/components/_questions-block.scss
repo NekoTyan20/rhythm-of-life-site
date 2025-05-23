@@ -2,7 +2,7 @@
 @use '../utils/breakpoints';
 
 .questions-container{
-    @media screen and (min-width: 1000px) {
+    @media screen and (width >= 1000px) {
         display: flex;
         justify-content: space-between
     }
@@ -13,7 +13,7 @@
     border-radius: 20px;
     box-shadow: variables.$box-shadow-section-blocks;
 
-    @media screen and (max-width: 999px) {
+    @media screen and (width <= 999px) {
         margin-bottom: 40px;
     }
 }
@@ -21,14 +21,12 @@
 .answers-block{
     & .item{
         width: 100%;
-
         background-color: transparent;
         border: 1px solid variables.$button-on-top-color;
         border-radius: 20px;
-
         margin-bottom: 20px;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (width >= 1000px) {
             width: 700px;
         }
 
@@ -60,26 +58,18 @@
 .question-title{
     display: flex;
     justify-content: space-between;
-
     width: 100%;
-
     background-color: transparent;
     border: none;
-
     border-radius: 20px;
-
     transition: 250ms;
-
     padding: 16px;
-
     cursor: pointer;
 
     & .question-arrow-icon{
         fill: variables.$primary-text-color;
         transition: 250ms;
-
         flex-shrink: 0;
-
         width: 20px;   
         height: 20px;  
 

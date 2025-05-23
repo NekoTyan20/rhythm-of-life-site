@@ -2,30 +2,26 @@
 
 .arrow-button-block{
     position: absolute;
-
     display: flex;
     align-items: center;
-
     bottom: -30px;
 
-    @media screen and (min-width: 1099px) {
+    @media screen and (width >= 1099px) {
         &.reverse{
             left: 580px;
         }
     }
 }
+
 .arrow-button{
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
     border: 1px solid variables.$black-color;
     background-color: variables.$white-color;
-
     cursor: pointer;
 
     &.left{
@@ -52,9 +48,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-
     margin-left: 10px;
-
     border: 1px solid variables.$black-color;
     background-color: variables.$white-color;
 
