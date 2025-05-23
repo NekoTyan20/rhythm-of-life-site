@@ -37,6 +37,9 @@
         width: 50px;
         height: 50px;
 
+        fill: variables.$blue-accent-color;
+        stroke: variables.$white-color;
+
         @media screen and (min-width: breakpoints.$tablet) {
             width: 60px;
             height: 60px;
@@ -46,9 +49,6 @@
             width: 45px;
             height: 45px;
         }
-
-        fill: variables.$blue-accent-color;
-        stroke: variables.$white-color;
 
         &.footer{
             fill: variables.$white-color;

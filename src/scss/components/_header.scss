@@ -16,13 +16,15 @@
 }
 
 .header-block{
-    padding: 5px 0;
-    @media screen and (min-width: 1354px) {
-        padding: 7px 0;
-    }
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 5px 0;
+
+    @media screen and (min-width: 1354px) {
+        padding: 7px 0;
+    }
 }
 
 .nav-list{
@@ -86,14 +88,13 @@
 
         & .link{
             position: relative;
+            padding: 5px;
 
+            color: variables.$primary-text-color;
             font-size: 24px;
             @media screen and (min-width: 868px) {
                 font-size: 16px;
             }
-
-            color: variables.$primary-text-color;
-            padding: 5px;
 
             &.footer{
                 font-size: 16px;
@@ -142,12 +143,11 @@
     }
 
     & .item{
+        margin-bottom: 20px;
+
         @media screen and (min-width: 1202px) {
             margin-bottom: 5px;
         }
-
-        margin-bottom: 20px;
-
     
         &.footer{
             margin-bottom: 30px;
@@ -165,12 +165,12 @@
             font-weight: 500;
             color: variables.$dark-yellow-color;
 
+            transition: 250ms;
+
             @media screen and (min-width: 1000px) {
                 color: variables.$primary-text-color;
                 font-size: 14px;
             }
-
-            transition: 250ms;
 
             &.footer{
                 color: variables.$white-color;

@@ -1,0 +1,32 @@
+@use '../utils/variables';
+@use '../utils/breakpoints';
+
+.our-partners {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 50px 50px;
+
+  @media screen and (min-width: breakpoints.$tablet) {
+     margin-bottom: 60px;
+  }
+
+  & .item {
+    width: 300px;
+  }
+
+  & a{
+    display: inline-block; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover, &:focus{
+        transform: translateZ(10px) translateY(-3px); 
+    }
+  }
+
+  & img {
+    width: 300px;    
+    height: auto;   
+    display: block;
+  }
+}

@@ -41,10 +41,6 @@
 
   color: #fff;
 
-  @media screen and (min-width: 1000px) {
-    height: 70vh;
-  }
-
   border: 1px solid variables.$black-color;
   background-size: cover;
   background-position: center;
@@ -53,27 +49,29 @@
   cursor: pointer;
   transition: all 500ms ease-in-out;
 
+  @media screen and (min-width: 1000px) {
+    height: 70vh;
+  }
+
   & .slide-info{
     position: absolute;
-
-  
+    
     margin: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+    bottom: 10px;
+    max-width: 377px;
+
+    transition: opacity 0.1s ease-in 0.1s;
 
     @media screen and (min-width: 860px) {
       opacity: 0;
     }
 
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-
     @media screen and (min-width: breakpoints.$mobile) {
       bottom: 20px;
     }
-
-    max-width: 377px;
-
-    transition: opacity 0.1s ease-in 0.1s;
   }
 
   &.active{

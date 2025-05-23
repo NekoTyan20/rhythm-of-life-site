@@ -30,6 +30,10 @@
   font-weight: 700;
   line-height: 1.5;
 
+  &.partners{
+    margin-bottom: 50px;
+  }
+
   &.footer {
     font-size: clamp(20px, 3vw, 28px);
     font-weight: 500;
@@ -47,11 +51,11 @@
 
   margin-left: 30px;
 
+  background-color: variables.$black-color;
+
   @media screen and (min-width: breakpoints.$tablet) {
     margin-left: 50px;
   }
-
-  background-color: variables.$black-color;
 }
 
 .third-title-text {

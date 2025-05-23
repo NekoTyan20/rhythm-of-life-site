@@ -4,7 +4,7 @@ document.getElementById('question-form').addEventListener('submit', function(e) 
   const formData = new FormData(this);
   const statusQuestion = document.getElementById('status-question');
 
-  fetch('https://formsubmit.co/ajax/zltfefelova@gmail.com', {
+  fetch('https://formsubmit.co/ajax/zritmnasogo@gmail.com', {
     method: 'POST',
     body: formData,
     headers: {

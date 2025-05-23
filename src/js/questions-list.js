@@ -27,9 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const activeAnswer = document.querySelector('.second-paragraph-text.active');
-  if (activeAnswer) {
-    const inner = activeAnswer.querySelector('.inner-text');
-    activeAnswer.style.maxHeight = inner.scrollHeight + 'px';
-  }
+    setTimeout(() => {
+      const activeAnswer = document.querySelector('.second-paragraph-text.active');
+      if (activeAnswer) {
+        const inner = activeAnswer.querySelector('.inner-text');
+        activeAnswer.style.maxHeight = inner.scrollHeight + 'px';
+      }
+  }, 200);
+
 });

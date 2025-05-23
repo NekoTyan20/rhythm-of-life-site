@@ -2,12 +2,10 @@
 @use '../utils/breakpoints';
 
 .questions-container{
-
     @media screen and (min-width: 1000px) {
         display: flex;
         justify-content: space-between
     }
-
 }
 
 .questions-block{
@@ -24,15 +22,15 @@
     & .item{
         width: 100%;
 
-        @media screen and (min-width: 1000px) {
-            width: 700px;
-        }
-
         background-color: transparent;
         border: 1px solid variables.$button-on-top-color;
         border-radius: 20px;
 
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1000px) {
+            width: 700px;
+        }
 
         &:last-child{
             margin-bottom: 0;
@@ -40,7 +38,7 @@
 
 
         .second-paragraph-text {
-            padding: 0 20px;  /* фиксированный горизонтальный паддинг */
+            padding: 0 20px;
             opacity: 0;
             max-height: 0;
             overflow: hidden;
@@ -53,9 +51,9 @@
 
         .inner-text {
             display: block;
-            padding: 10px 0; /* минимальный паддинг по вертикали по умолчанию */
+            padding: 10px 0;
             transition: padding 0.3s ease;
-            }
+        }
     }
 }
 

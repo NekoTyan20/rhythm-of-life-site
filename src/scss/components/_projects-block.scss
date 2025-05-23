@@ -26,6 +26,14 @@
     & img{
         position: absolute;
 
+        margin-bottom: 50px;
+
+        border-radius: 20px;
+        border: 1px solid variables.$black-color;
+
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+
          @media screen and (max-width: 1099px) {
             left: 0;
               width: 100%;
@@ -34,8 +42,6 @@
             height: auto;           
         }
 
-        margin-bottom: 50px;
-
         @media screen and (min-width: 1100px) {
             margin-left: 48px;
             margin-bottom: 0;
@@ -43,11 +49,6 @@
             top: 0;
             right: 0;
         }
-        border-radius: 20px;
-        border: 1px solid variables.$black-color;
-
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0;
 
         &.active{
             position: relative;
