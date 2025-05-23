@@ -7,12 +7,20 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 50px;
 
+  @media screen and (width <= 390px) {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); 
+  }
+
   @media screen and (min-width: breakpoints.$tablet) {
      margin-bottom: 60px;
   }
 
   & .item {
     width: 300px;
+
+    @media screen and (width <= 390px) {
+      width: 235px;  
+    }
   }
 
   & a{
@@ -28,5 +36,9 @@
     width: 300px;    
     height: auto;   
     display: block;
+
+    @media screen and (width <= 390px) {
+      width: 235px;  
+    }
   }
 }

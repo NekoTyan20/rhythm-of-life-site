@@ -1301,6 +1301,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
 }
+@media screen and (max-width: 390px) {
+  .our-partners {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  }
+}
 @media screen and (min-width: 768px) {
   .our-partners {
     margin-bottom: 60px;
@@ -1308,6 +1313,11 @@ body {
 }
 .our-partners .item {
   width: 300px;
+}
+@media screen and (max-width: 390px) {
+  .our-partners .item {
+    width: 235px;
+  }
 }
 .our-partners a {
   display: inline-block;
@@ -1320,6 +1330,11 @@ body {
   width: 300px;
   height: auto;
   display: block;
+}
+@media screen and (max-width: 390px) {
+  .our-partners img {
+    width: 235px;
+  }
 }
 
 .form-questions {
