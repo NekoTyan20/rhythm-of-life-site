@@ -30,6 +30,11 @@
   font-weight: 700;
   line-height: 1.5;
 
+  &.organization{
+    font-size: clamp(24px, 3vw, 26px);
+    line-height: 1.6;
+  }
+
   &.partners{
     margin-bottom: 50px;
   }
@@ -152,11 +157,13 @@
 }
 
 .paragraph-year {
+  position: relative;
+  z-index: 1;
   margin: 0 0 8px;
   text-align: center;
   color: variables.$dark-blue-accent-color;
   font-weight: 500;
-  font-size: clamp(36px, 5vw, 48px);
+  font-size: clamp(36px, 5vw, 40px);
 }
 
 .form-title {

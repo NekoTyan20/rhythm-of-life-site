@@ -3,7 +3,10 @@
 .projects-block{
     & .content-block{
         position: relative;
-        margin-bottom: 80px;
+
+        &.without-margin-one-photo{
+            margin-bottom: 80px;
+        }
 
         &:last-child{
             margin-bottom: 50px;
@@ -18,11 +21,15 @@
             &.reverse{
                 flex-direction: row-reverse;
             }
+
+            &.one-photo{
+                align-items: center;
+            }
         }
 
     }
 
-    & img{
+    & .content{
         position: absolute;
         margin-bottom: 50px;
         border-radius: 20px;
@@ -32,7 +39,7 @@
 
          @media screen and (width <= 1099px) {
             left: 0;
-              width: 100%;
+            width: 100%;
             max-width: 530px;
             aspect-ratio: 530 / 483; 
             height: auto;           

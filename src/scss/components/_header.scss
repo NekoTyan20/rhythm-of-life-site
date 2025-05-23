@@ -34,14 +34,10 @@
     display: none;
     margin-bottom: 50px;
 
-     @media screen and (width >= 868px){
+     @media screen and (width >= 660px){
         display: flex;
-        margin-left: 30px;
-        margin-bottom: 0;
-    }
-
-    @media screen and (width >= 1000px){
-        display: flex;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 0;
     }
 
@@ -69,19 +65,25 @@
             margin-bottom: 0;
         }
 
-        @media screen and (width >= 868px){
-            margin-left: 70px;
+        @media screen and (width >= 660px) {
             margin-bottom: 0;
         }
-
-         @media screen and (width >= 868px) and (width <= 1000px){
+        
+        @media screen and (width >= 660px) and (width <= 768px){
             margin-left: 30px;
         }
 
+        @media screen and (width >= 768px) and (width <= 1200px){
+            margin-left: 50px;
+        }
+
+        @media screen and (width >= 1100px){
+            margin-left: 100px;
+        }
 
         &.footer{
-        margin: 0;
-        display: block;
+            margin: 0;
+            display: block;
         }
 
         &:first-child{
@@ -94,7 +96,7 @@
             color: variables.$primary-text-color;
             font-size: 24px;
 
-            @media screen and (width >= 868px) {
+            @media screen and (width >= 660px) {
                 font-size: 16px;
             }
 
@@ -139,7 +141,7 @@
     display: none;
     justify-content: flex-start;
 
-     @media screen and (width >= 1202px){
+     @media screen and (width >= 890px){
         display: block;
         justify-content: flex-start;
     }
@@ -147,7 +149,7 @@
     & .item{
         margin-bottom: 20px;
 
-        @media screen and (width >= 1202px) {
+        @media screen and (width >= 890px) {
             margin-bottom: 5px;
         }
     
@@ -167,7 +169,7 @@
             color: variables.$dark-yellow-color;
             transition: 250ms;
 
-            @media screen and (width >= 1000px) {
+            @media screen and (width >= 890px) {
                 color: variables.$primary-text-color;
                 font-size: 14px;
             }
@@ -207,7 +209,7 @@
     &__item{
         margin-right: 8px;
 
-        @media screen and (width <= 1199px) {
+        @media screen and (width <= 870px) {
             display: none;
         }
 

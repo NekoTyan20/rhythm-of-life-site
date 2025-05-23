@@ -27,10 +27,24 @@
 }
 
 .our-achives{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // адаптивно
+    gap: 10px;
+    justify-items: center;
+}
 
-    & .second{
-        margin-left: 50px;
-    }
+.achive-block {
+    position: relative;
+    width: 150px;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    height: 0.5px;
+    background: variables.$dark-blue-accent-color;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 0.3s;
 }

@@ -10,7 +10,7 @@
     border: none;
     cursor: pointer;
 
-    @media screen and (width >= 868px){
+    @media screen and (width >= 660px){
         display: none;
     }
 }
@@ -64,7 +64,7 @@
   width: 100%;
   z-index: 1;
 
-  @media screen and (width >= 868px) {
+  @media screen and (width >= 660px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,7 +78,7 @@
 }
 
 .header-burger-elements.is-open {
-  max-height: 500px; 
+  max-height: 400px; 
   opacity: 1;
   box-shadow: 0 2px 2px rgb(179 178 178 / 10%);
 }
@@ -88,12 +88,10 @@
     display: none;
     width: 226px;
 
-    @media screen and (width >= 868px) {
+    @media screen and (width >= 660px) {
         display: block;
     }
 }
-
-
 
 .header-burger-elements.is-open .nav-list{
     display: block;

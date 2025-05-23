@@ -23,19 +23,16 @@
     }
   }
 
-  & a{
+  & img {
+    width: 300px;    
+    height: auto;   
     display: inline-block; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 
     &:hover, &:focus{
         transform: translateZ(10px) translateY(-3px); 
     }
-  }
-
-  & img {
-    width: 300px;    
-    height: auto;   
-    display: block;
 
     @media screen and (width <= 390px) {
       width: 235px;  

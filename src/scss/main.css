@@ -95,12 +95,12 @@ body {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0 0 40px 40px;
 }
-@media screen and (width <= 867px) {
+@media screen and (max-width: 867px) {
   .header-fixed {
     border-radius: 0 0 25px 25px;
   }
 }
-@media screen and (width <= 768px) {
+@media screen and (max-width: 768px) {
   .header-fixed {
     height: 60px;
   }
@@ -112,7 +112,7 @@ body {
   justify-content: space-between;
   padding: 5px 0;
 }
-@media screen and (width >= 1354px) {
+@media screen and (min-width: 1354px) {
   .header-block {
     padding: 7px 0;
   }
@@ -122,16 +122,11 @@ body {
   display: none;
   margin-bottom: 50px;
 }
-@media screen and (width >= 868px) {
+@media screen and (min-width: 660px) {
   .nav-list {
     display: flex;
-    margin-left: 30px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (width >= 1000px) {
-  .nav-list {
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
   }
 }
@@ -159,15 +154,24 @@ body {
 .nav-list .item:last-child {
   margin-bottom: 0;
 }
-@media screen and (width >= 868px) {
+@media screen and (width >= 660px) {
   .nav-list .item {
-    margin-left: 70px;
     margin-bottom: 0;
   }
 }
-@media screen and (width >= 868px) and (width <= 1000px) {
+@media screen and (width >= 660px) and (width <= 768px) {
   .nav-list .item {
     margin-left: 30px;
+  }
+}
+@media screen and (width >= 768px) and (width <= 1200px) {
+  .nav-list .item {
+    margin-left: 50px;
+  }
+}
+@media screen and (width >= 1100px) {
+  .nav-list .item {
+    margin-left: 100px;
   }
 }
 .nav-list .item.footer {
@@ -183,7 +187,7 @@ body {
   color: #25282B;
   font-size: 24px;
 }
-@media screen and (width >= 868px) {
+@media screen and (width >= 660px) {
   .nav-list .item .link {
     font-size: 16px;
   }
@@ -220,7 +224,7 @@ body {
   display: none;
   justify-content: flex-start;
 }
-@media screen and (width >= 1202px) {
+@media screen and (width >= 890px) {
   .contacts {
     display: block;
     justify-content: flex-start;
@@ -229,7 +233,7 @@ body {
 .contacts .item {
   margin-bottom: 20px;
 }
-@media screen and (width >= 1202px) {
+@media screen and (width >= 890px) {
   .contacts .item {
     margin-bottom: 5px;
   }
@@ -248,7 +252,7 @@ body {
   color: #FFAC33;
   transition: 250ms;
 }
-@media screen and (width >= 1000px) {
+@media screen and (width >= 890px) {
   .contacts .item .link {
     color: #25282B;
     font-size: 14px;
@@ -280,7 +284,7 @@ body {
 .icon-contact__item {
   margin-right: 8px;
 }
-@media screen and (width <= 1199px) {
+@media screen and (width <= 870px) {
   .icon-contact__item {
     display: none;
   }
@@ -326,7 +330,7 @@ body {
   border: none;
   cursor: pointer;
 }
-@media screen and (width >= 868px) {
+@media screen and (width >= 660px) {
   .btn-burger {
     display: none;
   }
@@ -380,7 +384,7 @@ body {
   width: 100%;
   z-index: 1;
 }
-@media screen and (width >= 868px) {
+@media screen and (width >= 660px) {
   .header-burger-elements {
     display: flex;
     flex-direction: row;
@@ -395,7 +399,7 @@ body {
 }
 
 .header-burger-elements.is-open {
-  max-height: 500px;
+  max-height: 400px;
   opacity: 1;
   box-shadow: 0 2px 2px rgba(179, 178, 178, 0.1);
 }
@@ -404,7 +408,7 @@ body {
   display: none;
   width: 226px;
 }
-@media screen and (width >= 868px) {
+@media screen and (width >= 660px) {
   .button-header-block {
     display: block;
   }
@@ -622,6 +626,10 @@ body {
   font-weight: 700;
   line-height: 1.5;
 }
+.second-title-text.organization {
+  font-size: clamp(24px, 3vw, 26px);
+  line-height: 1.6;
+}
 .second-title-text.partners {
   margin-bottom: 50px;
 }
@@ -730,11 +738,13 @@ body {
 }
 
 .paragraph-year {
+  position: relative;
+  z-index: 1;
   margin: 0 0 8px;
   text-align: center;
   color: #001956;
   font-weight: 500;
-  font-size: clamp(36px, 5vw, 48px);
+  font-size: clamp(36px, 5vw, 40px);
 }
 
 .form-title {
@@ -864,11 +874,26 @@ body {
 }
 
 .our-achives {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
 }
-.our-achives .second {
-  margin-left: 50px;
+
+.achive-block {
+  position: relative;
+  width: 150px;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 0.5px;
+  background: #001956;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 0.3s;
 }
 
 .team-block {
@@ -978,7 +1003,7 @@ body {
 .services-block {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -1020,6 +1045,8 @@ body {
 
 .projects-block .content-block {
   position: relative;
+}
+.projects-block .content-block.without-margin-one-photo {
   margin-bottom: 80px;
 }
 .projects-block .content-block:last-child {
@@ -1033,8 +1060,11 @@ body {
   .projects-block .info.reverse {
     flex-direction: row-reverse;
   }
+  .projects-block .info.one-photo {
+    align-items: center;
+  }
 }
-.projects-block img {
+.projects-block .content {
   position: absolute;
   margin-bottom: 50px;
   border-radius: 20px;
@@ -1043,7 +1073,7 @@ body {
   opacity: 0;
 }
 @media screen and (width <= 1099px) {
-  .projects-block img {
+  .projects-block .content {
     left: 0;
     width: 100%;
     max-width: 530px;
@@ -1052,24 +1082,24 @@ body {
   }
 }
 @media screen and (width >= 1100px) {
-  .projects-block img {
+  .projects-block .content {
     margin-left: 48px;
     margin-bottom: 0;
     top: 0;
     right: 0;
   }
 }
-.projects-block img.active {
+.projects-block .content.active {
   position: relative;
   z-index: 1;
   opacity: 1;
 }
-.projects-block img.reverse {
+.projects-block .content.reverse {
   left: 0;
   margin-left: 0;
 }
 @media screen and (width >= 1100px) {
-  .projects-block img.reverse {
+  .projects-block .content.reverse {
     margin-right: 48px;
   }
 }
@@ -1111,6 +1141,7 @@ body {
 
 .container-points {
   display: flex;
+  justify-content: center;
   min-width: 75px;
 }
 
@@ -1323,17 +1354,15 @@ body {
     width: 235px;
   }
 }
-.our-partners a {
-  display: inline-block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.our-partners a:hover, .our-partners a:focus {
-  transform: translateZ(10px) translateY(-3px);
-}
 .our-partners img {
   width: 300px;
   height: auto;
-  display: block;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.our-partners img:hover, .our-partners img:focus {
+  transform: translateZ(10px) translateY(-3px);
 }
 @media screen and (width <= 390px) {
   .our-partners img {
