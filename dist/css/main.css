@@ -994,7 +994,15 @@ body {
   background-color: #FD5;
 }
 .member-icon.socials-footer {
-  margin-left: 30px;
+  margin-left: 20px;
+}
+@media screen and (width >= 480px) {
+  .member-icon.socials-footer {
+    margin-left: 30px;
+  }
+}
+.member-icon.socials-footer .icon-send {
+  margin-right: 4px;
 }
 .member-icon.socials-footer:first-child {
   margin-left: 0;

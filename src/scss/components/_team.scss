@@ -102,7 +102,15 @@
     }
 
     &.socials-footer{
-      margin-left: 30px;
+      margin-left: 20px;
+
+      @media screen and (width >= 480px) {
+        margin-left: 30px;
+      }
+
+      & .icon-send{
+        margin-right: 4px;
+      }
 
       &:first-child{
         margin-left: 0;
