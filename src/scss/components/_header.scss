@@ -141,7 +141,7 @@
     display: none;
     justify-content: flex-start;
 
-     @media screen and (width >= 890px){
+     @media screen and (width >= 960px){
         display: block;
         justify-content: flex-start;
     }
@@ -149,7 +149,7 @@
     & .item{
         margin-bottom: 20px;
 
-        @media screen and (width >= 890px) {
+        @media screen and (width >= 960px) {
             margin-bottom: 5px;
         }
     
@@ -169,7 +169,7 @@
             color: variables.$dark-yellow-color;
             transition: 250ms;
 
-            @media screen and (width >= 890px) {
+            @media screen and (width >= 960px) {
                 color: variables.$primary-text-color;
                 font-size: 14px;
             }
@@ -209,7 +209,7 @@
     &__item{
         margin-right: 8px;
 
-        @media screen and (width <= 870px) {
+        @media screen and (width <= 960px) {
             display: none;
         }
 

@@ -4,7 +4,7 @@ document.getElementById('cooperation-form').addEventListener('submit', function(
 	const formData = new FormData(this);
 	const statusCooperation = document.getElementById('status-cooperation');
 
-	fetch('https://formsubmit.co/ajax/zritmnasogo@gmail.com', {
+	fetch('https://formsubmit.co/ajax/rhythm.nashogo.zhittia@gmail.com', {
 		method: 'POST',
 		body: formData,
 		headers: {

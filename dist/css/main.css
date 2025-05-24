@@ -224,7 +224,7 @@ body {
   display: none;
   justify-content: flex-start;
 }
-@media screen and (width >= 890px) {
+@media screen and (width >= 960px) {
   .contacts {
     display: block;
     justify-content: flex-start;
@@ -233,7 +233,7 @@ body {
 .contacts .item {
   margin-bottom: 20px;
 }
-@media screen and (width >= 890px) {
+@media screen and (width >= 960px) {
   .contacts .item {
     margin-bottom: 5px;
   }
@@ -252,7 +252,7 @@ body {
   color: #FFAC33;
   transition: 250ms;
 }
-@media screen and (width >= 890px) {
+@media screen and (width >= 960px) {
   .contacts .item .link {
     color: #25282B;
     font-size: 14px;
@@ -284,7 +284,7 @@ body {
 .icon-contact__item {
   margin-right: 8px;
 }
-@media screen and (width <= 870px) {
+@media screen and (width <= 960px) {
   .icon-contact__item {
     display: none;
   }
