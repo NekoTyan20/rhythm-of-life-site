@@ -744,7 +744,12 @@ body {
   text-align: center;
   color: #001956;
   font-weight: 500;
-  font-size: clamp(36px, 5vw, 40px);
+  font-size: clamp(48px, 5vw, 40px);
+}
+@media screen and (width >= 480px) {
+  .paragraph-year {
+    font-size: clamp(36px, 5vw, 40px);
+  }
 }
 
 .form-title {
