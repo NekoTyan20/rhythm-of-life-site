@@ -4,3 +4,10 @@ btnBurger.addEventListener('click', (event) => {
 	btnBurger.classList.toggle('is-open');
 	containerBurgerMenu.classList.toggle('is-open');
 })
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 660) {
+    btnBurger.classList.remove('is-open');
+    containerBurgerMenu.classList.remove('is-open');
+  }
+});
