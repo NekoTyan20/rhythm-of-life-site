@@ -4,8 +4,29 @@
     & .content-block{
         position: relative;
 
+        & video.content {
+            max-width: 530px;
+            aspect-ratio: 530 / 483;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        & iframe.content {
+            max-width: 530px;
+            aspect-ratio: 530 / 483;
+            height: 483;
+            object-fit: cover;
+        }
+
+
         &.without-margin-one-photo{
             margin-bottom: 80px;
+        }
+
+        &.one{
+            @media screen and (width >= 1000px) {
+                margin-bottom: 80px;
+            }
         }
 
         &:last-child{
