@@ -784,9 +784,6 @@ body {
     color: #2C578F;
     text-transform: uppercase;
   }
-  .logo .name.footer {
-    color: #FFF;
-  }
 }
 .logo .icon {
   width: 50px;
@@ -806,10 +803,6 @@ body {
     height: 45px;
   }
 }
-.logo .icon.footer {
-  fill: #FFF;
-  stroke: #2C578F;
-}
 .logo .form-of-organization {
   display: none;
 }
@@ -821,7 +814,49 @@ body {
     font-weight: 500;
     color: #2C578F;
   }
-  .logo .form-of-organization.footer {
+}
+
+.logo-footer .name {
+  display: none;
+}
+@media screen and (width >= 1354px) {
+  .logo-footer .name {
+    display: block;
+    margin-left: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+}
+.logo-footer .icon {
+  width: 50px;
+  height: 50px;
+  fill: #FFF;
+  stroke: #2C578F;
+}
+@media screen and (min-width: 768px) {
+  .logo-footer .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (width >= 1354px) {
+  .logo-footer .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+.logo-footer .form-of-organization {
+  display: none;
+}
+@media screen and (width >= 1354px) {
+  .logo-footer .form-of-organization {
+    display: block;
+    font-family: Inter, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
     color: #FFF;
   }
 }
