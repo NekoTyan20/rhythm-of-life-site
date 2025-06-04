@@ -1234,7 +1234,7 @@ body {
 .container-points {
   display: flex;
   justify-content: center;
-  min-width: 90px;
+  min-width: 100px;
 }
 
 .point {
@@ -1244,6 +1244,9 @@ body {
   margin-left: 10px;
   border: 1px solid #000;
   background-color: #FFF;
+}
+.point:first-child {
+  margin-left: 0;
 }
 .point.active {
   width: 25px;
