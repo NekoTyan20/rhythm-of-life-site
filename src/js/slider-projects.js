@@ -210,14 +210,14 @@ document.addEventListener('click', (event) => {
 			}
 
 			slides.forEach(slide => {
-                slide.classList.remove('active');
-                if (slide.tagName === 'VIDEO') {
-                    slide.pause();
-                    slide.currentTime = 0;
-                }
-            });
+				slide.classList.remove('active');
+				if (slide.tagName === 'VIDEO') {
+					slide.pause();
+					slide.currentTime = 0;
+				}
+			});
 
-            slides[newIndex].classList.add('active');
+			slides[newIndex].classList.add('active');
 
       
 			points.forEach(point => point.classList.remove('active'));

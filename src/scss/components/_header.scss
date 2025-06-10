@@ -157,14 +157,6 @@
             margin-bottom: 30px;
         }
 
-        // &:last-child{              // коли буде банка для донату, розкоментувати даний код та прибрати той, що нижче для маргін 0
-        //     margin-bottom: 40px; 
-
-        //     @media screen and (width >= 660px) {
-        //         margin-bottom: 0;
-        //     }
-        // }
-
         &:last-child{
             margin-bottom: 0; 
         }
@@ -195,6 +187,12 @@
             }
         }
     }
+}
+
+.header-burger-elements:has(.button-header-block.is-open) .contacts .item:last-child {
+    margin-bottom: 30px;
+
+    @media (width >= 660px) { margin-bottom: 0; }
 }
 
 

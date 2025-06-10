@@ -268,6 +268,15 @@ body {
   color: #FD5;
 }
 
+.header-burger-elements:has(.button-header-block.is-open) .contacts .item:last-child {
+  margin-bottom: 30px;
+}
+@media (width >= 660px) {
+  .header-burger-elements:has(.button-header-block.is-open) .contacts .item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .icon-contact {
   fill: #25282B;
   cursor: pointer;
@@ -1443,8 +1452,7 @@ body {
 
 .our-partners {
   display: grid;
-  justify-items: center;
-  align-items: center;
+  place-items: center center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
 }

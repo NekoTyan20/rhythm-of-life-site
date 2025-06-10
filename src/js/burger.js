@@ -6,8 +6,8 @@ btnBurger.addEventListener('click', (event) => {
 })
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 660) {
-    btnBurger.classList.remove('is-open');
-    containerBurgerMenu.classList.remove('is-open');
-  }
+	if (window.innerWidth >= 660) {
+		btnBurger.classList.remove('is-open');
+		containerBurgerMenu.classList.remove('is-open');
+	}
 });
