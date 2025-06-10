@@ -78,18 +78,25 @@
 }
 
 .header-burger-elements.is-open {
-  max-height: 400px; 
+  max-height: 500px; 
   opacity: 1;
   box-shadow: 0 2px 2px rgb(179 178 178 / 10%);
 }
 
 
 .button-header-block{
-    display: none;
     width: 226px;
 
     @media screen and (width >= 660px) {
-        display: block;
+        display: none;
+    }
+
+    &.donat-overlay{
+        display: none;
+
+        @media screen and (width >= 768px) {
+            display: block;
+        }
     }
 }
 

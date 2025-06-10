@@ -77,7 +77,7 @@
             margin-left: 30px;
         }
 
-        @media screen and (width >= 1100px){
+        @media screen and (width >= 1175px){
             margin-left: 100px;
         }
 
@@ -157,8 +157,16 @@
             margin-bottom: 30px;
         }
 
+        // &:last-child{              // коли буде банка для донату, розкоментувати даний код та прибрати той, що нижче для маргін 0
+        //     margin-bottom: 40px; 
+
+        //     @media screen and (width >= 660px) {
+        //         margin-bottom: 0;
+        //     }
+        // }
+
         &:last-child{
-            margin-bottom: 0;
+            margin-bottom: 0; 
         }
 
         & .link{
