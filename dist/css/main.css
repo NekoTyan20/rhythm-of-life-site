@@ -1259,7 +1259,7 @@ body {
 .container-points {
   display: flex;
   justify-content: center;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .point {
