@@ -85,8 +85,6 @@
 
 
 .button-header-block{
-    width: 226px;
-
     @media screen and (width >= 660px) {
         display: none;
     }
@@ -97,6 +95,14 @@
         @media screen and (width >= 768px) {
             display: block;
         }
+    }
+}
+
+.desk-join-btn{
+    display: none;
+    margin-right: 20px;
+    @media screen and (min-width: breakpoints.$tablet) {
+        display: inline-block;
     }
 }
 

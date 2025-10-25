@@ -413,9 +413,6 @@ body {
   box-shadow: 0 2px 2px rgba(179, 178, 178, 0.1);
 }
 
-.button-header-block {
-  width: 226px;
-}
 @media screen and (width >= 660px) {
   .button-header-block {
     display: none;
@@ -427,6 +424,16 @@ body {
 @media screen and (width >= 768px) {
   .button-header-block.donat-overlay {
     display: block;
+  }
+}
+
+.desk-join-btn {
+  display: none;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .desk-join-btn {
+    display: inline-block;
   }
 }
 
