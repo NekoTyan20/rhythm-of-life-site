@@ -1460,8 +1460,8 @@ body {
 .our-partners {
   display: grid;
   place-items: center center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 @media screen and (width <= 390px) {
   .our-partners {
@@ -1470,11 +1470,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .our-partners {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 .our-partners .item {
-  width: 300px;
+  width: 250px;
 }
 @media screen and (width <= 390px) {
   .our-partners .item {
@@ -1482,7 +1482,7 @@ body {
   }
 }
 .our-partners img {
-  width: 300px;
+  width: 250px;
   height: auto;
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
