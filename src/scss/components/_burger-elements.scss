@@ -101,8 +101,9 @@
 .desk-join-btn{
     display: none;
     margin-right: 20px;
-    @media screen and (min-width: breakpoints.$tablet) {
+    @media screen and (min-width: 660px) {
         display: inline-block;
+        margin-right: 0;
     }
 }
 
